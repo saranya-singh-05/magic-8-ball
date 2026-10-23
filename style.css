@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600;700&family=Playfair+Display:wght@600;700&display=swap');
+body {
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  background: #fff8f1;
+  color: #443c53;
+  font-family: 'DM Sans', Arial, sans-serif;
+}
+
+h1 {
+  color: #c783a2;
+}
+
+#ball {
+     #answer {
+  background: radial-gradient(circle at 40% 35%, #bd6c91, #874766);
+  color: white;
+}
+  width: 240px;
+  height: 240px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: radial-gradient(
+  circle at 30% 25%,
+  #fffafd,
+  #ffd9e6 42%,
+  #f5a9c4 78%,
+  #df84a7
+);
+box-shadow:
+  inset -12px -14px 22px #b94f7830,
+  inset 8px 8px 18px #ffffffb0,
+  0 12px 24px #443c5330;
+}
+
+#answer {
+    
+  width: 130px;
+  height: 130px;
+  box-sizing: border-box;
+  padding: 16px;
+
+  display: grid;
+  place-items: center;
+
+  border-radius: 50%;
+  background: radial-gradient(circle at 40% 35%, #bd6c91, #874766);
+  color: white;
+
+  font-size: 16px;
+  line-height: 1.2;
+  text-align: center;
+  overflow-wrap: anywhere;
+}
+
+
+button {
+  padding: 14px 22px;
+  border: 0;
+  border-radius: 14px;
+  background: #c783a2;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #b56f8d;
+}
+#ball.shaking {
+  animation: shake 3s ease-in-out;
+}
+
+#eight {
+  font-size: 72px;
+  font-family: Georgia, serif;
+  font-weight: bold;
+  line-height: 1;
+}
+
+@keyframes shake {
+  0%, 100% { transform: rotate(0); }
+  20%, 60% { transform: rotate(-20deg); }
+  40%, 80% { transform: rotate(20deg); }
+}
+
+h1 {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  font-weight: 700;
+  letter-spacing: -1px;
+  color: #b96f91;
+}
+
+p {
+  font-family: "DM Sans", Arial, sans-serif;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  color: #55455b;
+}
+
+#shake-button {
+  padding: 16px 32px;
+  border: 2px solid white;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #d98aaa, #bd6d92);
+  color: white;
+  font-family: "DM Sans", Arial, sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  box-shadow: 0 6px 14px #bd6d9240;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+#shake-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 9px 18px #bd6d9250;
+}
